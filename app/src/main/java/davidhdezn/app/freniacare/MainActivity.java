@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -18,6 +20,8 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
+Button btn;
+TextView btnTxt;
 
     SignInButton signin;
     int RC_SIGN_IN = 0;
@@ -28,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         signin = findViewById(R.id.sign_in_button);
+
+        btn = (Button) findViewById(R.id.button2);
+        btnTxt = (TextView) findViewById(R.id.txtRegistrarse);
+
+
+
+
+
 
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +54,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent( MainActivity.this, RegistroUsuario.class));
+                finish();
+                }
+
+            }
+        );
 
     GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()

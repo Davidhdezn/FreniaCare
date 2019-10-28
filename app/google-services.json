@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1064032021200",
+    "firebase_url": "https://freniacare-1571596398539.firebaseio.com",
+    "project_id": "freniacare-1571596398539",
+    "storage_bucket": "freniacare-1571596398539.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064032021200:android:c5d51e85dffcca5f158cd5",
+        "android_client_info": {
+          "package_name": "davidhdezn.app.freniacare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064032021200-sjf0m9dtijkhgsi747smni8nrooirkgn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "davidhdezn.app.freniacare",
+            "certificate_hash": "b18cba53791209c9426ef36c33a141ce29e9c697"
+          }
+        },
+        {
+          "client_id": "1064032021200-6orja7gbpmul1uimaoiqjeb1s89ia8gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT9GyDHSQ2xzrAhlZrSknJJA6eac1Mevw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064032021200-6orja7gbpmul1uimaoiqjeb1s89ia8gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
