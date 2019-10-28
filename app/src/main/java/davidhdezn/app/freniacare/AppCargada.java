@@ -19,7 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class CargandoApp extends AppCompatActivity {
+public class AppCargada extends AppCompatActivity {
 ImageView imageView;
 TextView name,email,id;
 Button SingOut;
@@ -27,7 +27,7 @@ GoogleSignInClient mGoogleSignInClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cargando_app);
+        setContentView(R.layout.app_cargada);
 
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -77,7 +77,7 @@ GoogleSignInClient mGoogleSignInClient;
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        Toast.makeText(CargandoApp.this,"Saliendo..," ,Toast.LENGTH_LONG).show();
+                        Toast.makeText(AppCargada.this,"Saliendo..," ,Toast.LENGTH_LONG).show();
                         finish();
                     }
                 });

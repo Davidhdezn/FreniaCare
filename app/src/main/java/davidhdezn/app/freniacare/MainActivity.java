@@ -57,7 +57,7 @@ TextView btnTxt;
         btnTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent( MainActivity.this, RegistroUsuario.class));
+                startActivity(new Intent( MainActivity.this, Cargando.class));
                 finish();
                 }
 
@@ -103,7 +103,7 @@ private void signIn() {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
 
             // Signed in successfully, show authenticated UI.
-            Intent intent = new Intent(MainActivity.this, CargandoApp.class);
+            Intent intent = new Intent(MainActivity.this, AppCargada.class);
             startActivity(intent);
 
         } catch (ApiException e) {
