@@ -4,15 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -36,11 +38,19 @@ public class RegistroUsuario extends AppCompatActivity {
     DatabaseReference mDatabase;
     //private DatabaseReference mDatabase;// ...
     //mDatabase = FirebaseDatabase.getInstance().getReference();
-
+    Window window;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_usuario);
+
+        this.window = getWindow();
+        String primaryDark = "#5c007a";
+        String primary = "#8e24aa";
+        window.setStatusBarColor(Color.parseColor(primaryDark));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(primary)));
+        window.setNavigationBarColor(Color.parseColor(primary));
+
 
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
@@ -93,7 +103,7 @@ if (task.isSuccessful()){
         @Override
         public void onComplete(@NonNull Task<Void> task2) {
 if (task2.isSuccessful()){
-    startActivity(new Intent(RegistroUsuario.this, MainActivity.class));
+    startActivity(new Intent(RegistroUsuario.this, Login.class));
     finish();
 }
 else {

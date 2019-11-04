@@ -13,7 +13,7 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-startActivity(new Intent(this,MainActivity.class));
+startActivity(new Intent(this, Login.class));
 
         }
 }

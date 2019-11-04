@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rotate xmlns:android="http://schemas.android.com/apk/res/android">
-    android:fromDegress="-90"
-    android:pivotX="50%"
-    android:pivotY="50%"
-    android:toDegress="270">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <shape android:useLevel="false"
+    <item android:id="@android:id/background">
+
+    <shape
+
+        android:useLevel="false"
         android:shape="ring">
 
-        <gradient android:endColor="#ff0000"
-            android:centerColor="#00bfff"
-            android:startColor="#ff0000"
-            android:type="sweep"
-            android:useLevel="false"/>
-
+        <solid android:color="@android:color/darker_gray"/>
     </shape>
+    </item>
 
-</rotate>
+    <item android:id="@android:id/progress">
+        <rotate android:fromDegrees="0"
+            android:toDegrees="360">
+
+            <shape
+                android:innerRadiusRatio="3"
+                android:useLevel="true"
+                android:shape="ring">
+
+                <solid android:color="@color/colorAccent"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
