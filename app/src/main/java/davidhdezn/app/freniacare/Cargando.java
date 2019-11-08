@@ -3,23 +3,34 @@ package davidhdezn.app.freniacare;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.view.Window;
 import android.widget.ProgressBar;
-
-import com.bumptech.glide.Glide;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
+import davidhdezn.app.freniacare.Fragments.MenuPrincipal;
+
 public class Cargando extends AppCompatActivity {
      ProgressBar progressBar;
+     Window window;
 Timer timer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cargando);
+
+        this.window = getWindow();
+        String primaryDark = "#5c007a";
+        String primary = "#8e24aa";
+        window.setStatusBarColor(Color.parseColor(primaryDark));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(primary)));
+        window.setNavigationBarColor(Color.parseColor(primary));
 
         init();
         progressBar.setVisibility(View.VISIBLE);
