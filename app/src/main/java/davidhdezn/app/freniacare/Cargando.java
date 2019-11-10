@@ -52,7 +52,7 @@ Timer timer;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(Cargando.this, MenuPrincipal.class);
+                Intent intent = new Intent(Cargando.this, nav_header_navegation_draw.class);
                 startActivity(intent);
                 finish();
             }

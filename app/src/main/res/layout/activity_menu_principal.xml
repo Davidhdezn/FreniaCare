@@ -17,8 +17,8 @@
     <Button
         android:id="@+id/btnInformate"
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/inform"
         android:text=""
         android:textAlignment="gravity"
@@ -39,49 +39,49 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnInformate"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/btnEspecialista"
 
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/inform"
         android:text=""
         android:textAlignment="gravity"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintHorizontal_bias="0.72"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.051" />
 
+
     <TextView
         android:id="@+id/txtEspecialista"
-        android:layout_width="97dp"
-        android:layout_height="36dp"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
         android:text="Especialista"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintHorizontal_bias="0.797"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEspecialista"
-        app:layout_constraintVertical_bias="0.033" />
-
+        app:layout_constraintVertical_bias="0.02" />
 
     <Button
         android:id="@+id/btnTratamientos"
 
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/tratamient"
         android:text=""
         android:textAlignment="gravity"
@@ -111,8 +111,8 @@
     <Button
         android:id="@+id/btnEstadodeAnimo"
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/cara1"
         android:text=""
         android:textAlignment="gravity"
@@ -124,6 +124,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.437" />
 
+
     <TextView
         android:id="@+id/txtEstadodeAnimo"
         android:layout_width="142dp"
@@ -133,17 +134,16 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEstadodeAnimo"
-        app:layout_constraintVertical_bias="0.039" />
-
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnTestUbicación"
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/test"
         android:text=""
         android:textAlignment="gravity"
@@ -164,16 +164,16 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.138"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnTestUbicación"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <Button
         android:id="@+id/btnCentrodeSalud"
         style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
+        android:layout_width="93dp"
+        android:layout_height="98dp"
         android:background="@drawable/hospital"
         android:text=""
         android:textAlignment="gravity"
@@ -194,41 +194,41 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
-        app:layout_constraintVertical_bias="0.196" />
+        app:layout_constraintVertical_bias="0.175" />
 
+    <!---
+        <Button
+            android:id="@+id/btnMultimedia"
+            style="@style/shape"
+            android:layout_width="129dp"
+            android:layout_height="127dp"
+            android:background="@drawable/test"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.924" />
 
-    <Button
-        android:id="@+id/btnMultimedia"
-        style="@style/shape"
-        android:layout_width="129dp"
-        android:layout_height="127dp"
-        android:background="@drawable/test"
-        android:text=""
-        android:textAlignment="gravity"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.753"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.924" />
-
-    <TextView
-        android:id="@+id/txtMultimedia"
-        android:layout_width="143dp"
-        android:layout_height="32dp"
-        android:text="Multimedia"
-        android:textColor="@android:color/holo_blue_dark"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.781"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
-        app:layout_constraintVertical_bias="0.196" />
-
+        <TextView
+            android:id="@+id/txtMultimedia"
+            android:layout_width="143dp"
+            android:layout_height="32dp"
+            android:text="Multimedia"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.781"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
+            app:layout_constraintVertical_bias="0.196" />
+    -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

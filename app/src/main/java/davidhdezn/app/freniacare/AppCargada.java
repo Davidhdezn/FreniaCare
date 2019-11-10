@@ -19,7 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class AppCargada extends AppCompatActivity {
+class nav_header_navegation_draw extends AppCompatActivity {
 ImageView imageView;
 TextView name,email,id;
 Button SingOut;
@@ -42,7 +42,7 @@ GoogleSignInClient mGoogleSignInClient;
         email = findViewById(R.id.email);
         id = findViewById(R.id.id);
         SingOut = findViewById(R.id.signOut);
-
+/**
         SingOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,7 +55,7 @@ GoogleSignInClient mGoogleSignInClient;
                 }
 
             }
-        });
+        });**/
 
         GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
         if (acct != null) {
@@ -71,7 +71,7 @@ GoogleSignInClient mGoogleSignInClient;
         }
 
     }
-
+/**
     private void signOut() {
         mGoogleSignInClient.signOut()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
@@ -81,5 +81,6 @@ GoogleSignInClient mGoogleSignInClient;
                         finish();
                     }
                 });
-    }
+    }*/
+
 }

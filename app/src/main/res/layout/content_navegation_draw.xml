@@ -4,10 +4,228 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/app_bar_main">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!---    tools:showIn="@layout/app_bar_main">-->
 
-    <fragment
+
+        <Button
+            android:id="@+id/btnInformate"
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/inform"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.053" />
+
+        <TextView
+            android:id="@+id/txtInformate"
+            android:layout_width="88dp"
+            android:layout_height="32dp"
+            android:text="Informate"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnInformate"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Button
+            android:id="@+id/btnEspecialista"
+
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/inform"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.051" />
+
+
+        <TextView
+            android:id="@+id/txtEspecialista"
+            android:layout_width="110dp"
+            android:layout_height="34dp"
+            android:text="Especialista"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEspecialista"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <Button
+            android:id="@+id/btnTratamientos"
+
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/tratamient"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437" />
+
+        <TextView
+            android:id="@+id/txtTratamientos"
+            android:layout_width="112dp"
+            android:layout_height="35dp"
+            android:text="Tratamientos"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTratamientos"
+            app:layout_constraintVertical_bias="0.04" />
+
+
+        <Button
+            android:id="@+id/btnEstadodeAnimo"
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/cara1"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.437" />
+
+
+        <TextView
+            android:id="@+id/txtEstadodeAnimo"
+            android:layout_width="142dp"
+            android:layout_height="31dp"
+            android:text="Estado de Animo"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEstadodeAnimo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btnTestUbicación"
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/test"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.21"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.826" />
+
+        <TextView
+            android:id="@+id/txtTestUbicacion"
+            android:layout_width="143dp"
+            android:layout_height="32dp"
+            android:text="Test de Ubicación"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnTestUbicación"
+            app:layout_constraintVertical_bias="0.16" />
+
+        <Button
+            android:id="@+id/btnCentrodeSalud"
+            style="@style/shape"
+            android:layout_width="93dp"
+            android:layout_height="98dp"
+            android:background="@drawable/hospital"
+            android:text=""
+            android:textAlignment="gravity"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.824" />
+
+        <TextView
+            android:id="@+id/txtTCentrodeSalud"
+            android:layout_width="143dp"
+            android:layout_height="32dp"
+            android:text="Centro de Salud"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
+            app:layout_constraintVertical_bias="0.175" />
+
+        <!---
+            <Button
+                android:id="@+id/btnMultimedia"
+                style="@style/shape"
+                android:layout_width="129dp"
+                android:layout_height="127dp"
+                android:background="@drawable/test"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.753"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.924" />
+
+            <TextView
+                android:id="@+id/txtMultimedia"
+                android:layout_width="143dp"
+                android:layout_height="32dp"
+                android:text="Multimedia"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.781"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
+                app:layout_constraintVertical_bias="0.196" />
+        -->
+
+   <!--- <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
@@ -16,5 +234,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+        app:navGraph="@navigation/mobile_navigation" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

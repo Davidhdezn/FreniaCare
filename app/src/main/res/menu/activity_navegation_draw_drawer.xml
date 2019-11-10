@@ -8,23 +8,14 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_manage"
             android:title="Ajustes"
-
             />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/estrella"
             android:title="¿Te gusto la aplicación?" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_share"
-            android:title="Compartir" />
-        <item
-            android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Entre en Contacto" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Comunicaciòn">
         <menu>
             <item
                 android:id="@+id/nav_share"

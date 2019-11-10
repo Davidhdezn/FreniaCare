@@ -30,7 +30,7 @@
             android:name=".Login"
             android:theme="@style/SinBar" />
         <activity android:name=".RegistroUsuario" />
-        <activity android:name=".AppCargada" />
+        <activity android:name=".nav_header_navegation_draw" />
     </application>
 
 </manifest>
