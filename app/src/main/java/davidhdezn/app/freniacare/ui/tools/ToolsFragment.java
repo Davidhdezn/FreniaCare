@@ -17,7 +17,7 @@ import davidhdezn.app.freniacare.R;
 public class ToolsFragment extends Fragment {
 
     private ToolsViewModel toolsViewModel;
-
+/**
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         toolsViewModel =
@@ -31,5 +31,5 @@ public class ToolsFragment extends Fragment {
             }
         });
         return root;
-    }
+    }**/
 }

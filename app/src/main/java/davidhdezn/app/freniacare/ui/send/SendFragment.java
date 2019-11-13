@@ -17,7 +17,7 @@ import davidhdezn.app.freniacare.R;
 public class SendFragment extends Fragment {
 
     private SendViewModel sendViewModel;
-
+/**
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         sendViewModel =
@@ -31,5 +31,5 @@ public class SendFragment extends Fragment {
             }
         });
         return root;
-    }
+    }**/
 }

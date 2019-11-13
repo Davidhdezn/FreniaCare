@@ -18,6 +18,7 @@ public class SlideshowFragment extends Fragment {
 
     private SlideshowViewModel slideshowViewModel;
 
+    /**
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         slideshowViewModel =
@@ -30,6 +31,6 @@ public class SlideshowFragment extends Fragment {
                 textView.setText(s);
             }
         });
-        return root;
-    }
+        return root;**/
+    //}
 }

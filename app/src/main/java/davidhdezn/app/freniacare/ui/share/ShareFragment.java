@@ -17,9 +17,10 @@ import davidhdezn.app.freniacare.R;
 public class ShareFragment extends Fragment {
 
     private ShareViewModel shareViewModel;
-
+/**
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+
         shareViewModel =
                 ViewModelProviders.of(this).get(ShareViewModel.class);
         View root = inflater.inflate(R.layout.fragment_share, container, false);
@@ -31,5 +32,5 @@ public class ShareFragment extends Fragment {
             }
         });
         return root;
-    }
+    }**/
 }

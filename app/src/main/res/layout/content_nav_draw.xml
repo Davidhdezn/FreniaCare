@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_navi_drawer">
-
+    tools:showIn="@layout/activity_nav_draw">
 
     <fragment
         android:id="@+id/nav_host_fragment"
@@ -14,12 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
-
     <Button
         android:id="@+id/btnInformate"
         style="@style/shape"
@@ -56,7 +53,7 @@
         style="@style/shape"
         android:layout_width="93dp"
         android:layout_height="98dp"
-        android:background="@drawable/especialista"
+        android:background="@drawable/inform"
         android:text=""
         android:textAlignment="gravity"
         android:textSize="18sp"
@@ -140,10 +137,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnEstadodeAnimo"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnTestUbicación"
@@ -204,6 +201,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCentrodeSalud"
         app:layout_constraintVertical_bias="0.175" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
