@@ -1,14 +1,16 @@
 package davidhdezn.app.freniacare;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
+import android.telephony.SmsManager;
 import android.view.View;
 
+import androidx.core.app.ActivityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -22,26 +24,53 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
-import android.view.Window;
+import android.widget.Button;
+import android.widget.Toast;
 
-public class NavigationDrawer extends AppCompatActivity {
+public class NaviDrawer extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-Window window;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation_drawer);
+        setContentView(R.layout.activity_navi_drawer);
         Toolbar toolbar = findViewById(R.id.toolbar);
-
-        this.window = getWindow();
-        String primaryDark = "#5c007a";
-        String primary = "#8e24aa";
-        window.setStatusBarColor(Color.parseColor(primaryDark));
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(primary)));
-        window.setNavigationBarColor(Color.parseColor(primary));
-
         setSupportActionBar(toolbar);
+
+        /**
+        Button Enviar;
+        Enviar = (Button) findViewById(R.id.enviar);
+
+
+        if(ActivityCompat.checkSelfPermission(
+                NaviDrawer.this, Manifest.permission.SEND_SMS)
+                != PackageManager.PERMISSION_GRANTED&& ActivityCompat.checkSelfPermission(
+                NaviDrawer.this,Manifest
+                        .permission.SEND_SMS)!= PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(NaviDrawer.this,new String[]
+                    { Manifest.permission.SEND_SMS,},1000);
+        }else{
+        };
+        Enviar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                enviarMensaje("2461847491","Hola!! Prueba Frenia-Care");
+            }
+        });
+    }
+    private void enviarMensaje (String numero, String mensaje){
+        try {
+            SmsManager sms = SmsManager.getDefault();
+            sms.sendTextMessage(numero,null,mensaje,null,null);
+            Toast.makeText(getApplicationContext(), "Mensaje Enviado.", Toast.LENGTH_LONG).show();
+        }
+        catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "Mensaje no enviado, datos incorrectos.", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+        **/
+
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +79,8 @@ Window window;
                         .setAction("Action", null).show();
             }
         });
+
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -67,7 +98,7 @@ Window window;
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation_drawer, menu);
+        getMenuInflater().inflate(R.menu.navi_drawer, menu);
         return true;
     }
 

@@ -14,7 +14,7 @@ import android.widget.ProgressBar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import davidhdezn.app.freniacare.NavigationDrawer;
+import davidhdezn.app.freniacare.NaviDrawer;
 import davidhdezn.app.freniacare.R;
 
 public class Cargando extends AppCompatActivity {
@@ -53,7 +53,7 @@ Timer timer;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(Cargando.this, NavigationDrawer.class);
+                Intent intent = new Intent(Cargando.this, NaviDrawer.class);
                 startActivity(intent);
                 finish();
             }
