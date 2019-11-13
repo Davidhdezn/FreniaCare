@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".InicialApp.Login">
 
     <ImageView
         android:id="@+id/imageView"
@@ -68,8 +68,8 @@
         android:layout_width="246dp"
         android:layout_height="37dp"
 
-        android:background="@drawable/roundbutton"
         android:text="Login"
+        android:background="@drawable/roundbutton"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -12,13 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NavegationDraw"
-            android:label="@string/title_activity_navegation_draw"
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".MenuPrincipal.EstadoDeAnimo" />
         <activity android:name=".Fragments.MenuPrincipal" />
-        <activity android:name=".Cargando" />
+        <activity android:name=".InicialApp.Cargando" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".InicialApp.SplashScreen"
             android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,10 +28,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".InicialApp.Login"
             android:theme="@style/SinBar" />
-        <activity android:name=".RegistroUsuario" />
-        <activity android:name=".nav_header_navegation_draw" />
+        <activity android:name=".InicialApp.RegistroUsuario" />
     </application>
 
 </manifest>

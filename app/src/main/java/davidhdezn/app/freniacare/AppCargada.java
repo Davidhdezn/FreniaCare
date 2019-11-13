@@ -19,7 +19,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-class nav_header_navegation_draw extends AppCompatActivity {
+class AppCargada extends AppCompatActivity {
+
 ImageView imageView;
 TextView name,email,id;
 Button SingOut;

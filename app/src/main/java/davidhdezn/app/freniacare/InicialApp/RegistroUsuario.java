@@ -1,4 +1,4 @@
-package davidhdezn.app.freniacare;
+package davidhdezn.app.freniacare.InicialApp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +22,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import davidhdezn.app.freniacare.R;
 
 public class RegistroUsuario extends AppCompatActivity {
 

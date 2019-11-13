@@ -1,4 +1,4 @@
-package davidhdezn.app.freniacare.Fragments;
+package davidhdezn.app.freniacare.MenuPrincipal;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,12 +10,13 @@ import android.view.Window;
 
 import davidhdezn.app.freniacare.R;
 
-public class MenuPrincipal extends AppCompatActivity {
-Window window;
+public class EstadoDeAnimo extends AppCompatActivity {
+
+    Window window;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_principal);
+        setContentView(R.layout.activity_estado_de_animo);
 
         this.window = getWindow();
         String primaryDark = "#5c007a";
@@ -24,11 +25,7 @@ Window window;
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor(primary)));
         window.setNavigationBarColor(Color.parseColor(primary));
 
-    getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-    getSupportActionBar().setCustomView(R.layout.txt_layout);
-
-
-
-
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.txt_layout);
     }
 }

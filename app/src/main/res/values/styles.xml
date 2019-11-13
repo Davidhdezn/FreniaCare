@@ -9,7 +9,7 @@
     </style>
 
     <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground"> @drawable/background_splashscreen</item>
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
     </style>
 
     <style name="SinBar" parent="Theme.AppCompat.Light.NoActionBar">
@@ -25,9 +25,9 @@
         android:radius="0.3"
         android:topLeftRadius="7"
 
-            android:color="@android:color/holo_blue_light"
+        android:color="@android:color/holo_blue_light"
 
-            android:radius="7" />
+        android:radius="7" />
 
         <!---<corners android:radius="20dp" />-->
     </style>
@@ -37,6 +37,8 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

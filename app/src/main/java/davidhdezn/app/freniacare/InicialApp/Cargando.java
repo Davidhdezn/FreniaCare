@@ -1,4 +1,4 @@
-package davidhdezn.app.freniacare;
+package davidhdezn.app.freniacare.InicialApp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +14,8 @@ import android.widget.ProgressBar;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import davidhdezn.app.freniacare.Fragments.MenuPrincipal;
+import davidhdezn.app.freniacare.NavigationDrawer;
+import davidhdezn.app.freniacare.R;
 
 public class Cargando extends AppCompatActivity {
      ProgressBar progressBar;
@@ -52,10 +53,10 @@ Timer timer;
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent = new Intent(Cargando.this, nav_header_navegation_draw.class);
+                Intent intent = new Intent(Cargando.this, NavigationDrawer.class);
                 startActivity(intent);
                 finish();
             }
-        },5000);
+        },4000);
     }
 }

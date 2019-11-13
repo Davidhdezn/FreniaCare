@@ -1,10 +1,12 @@
-package davidhdezn.app.freniacare;
+package davidhdezn.app.freniacare.InicialApp;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import davidhdezn.app.freniacare.InicialApp.Login;
 
 public class SplashScreen extends AppCompatActivity {
 
